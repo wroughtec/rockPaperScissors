@@ -1,14 +1,15 @@
 {
   "name": "rock-paper-scissors",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test --browser ChromeHeadless",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "release": "standard-version"
   },
   "private": true,
   "dependencies": {
@@ -41,9 +42,17 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "node-sass": "^4.7.2",
+    "prettier": "^1.8.2",
     "protractor": "~5.1.2",
+    "standard-version": "^4.2.0",
+    "stylelint": "^8.3.1",
+    "stylelint-no-browser-hacks": "^1.1.0",
+    "stylelint-no-unsupported-browser-features": "^1.0.1",
+    "stylelint-order": "^0.7.0",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
+    "tslint-config-prettier": "^1.6.0",
     "typescript": "~2.4.2"
   }
 }
