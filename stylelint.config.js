@@ -2,12 +2,14 @@ const Stylelint = {
     plugins: [
         'stylelint-order',
         'stylelint-no-unsupported-browser-features',
-        './node_modules/stylelint-no-browser-hacks/lib'
+        './node_modules/stylelint-no-browser-hacks/lib',
+        'stylelint-declaration-block-no-ignored-properties'
     ],
 
     'order/order': ['custom-properties', 'dollar-variables', 'declarations', 'at-rules', 'rules'],
 
     rules: {
+        'plugin/declaration-block-no-ignored-properties': true,
         'order/properties-order': [
             // Positioning
             {
